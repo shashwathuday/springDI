@@ -10,10 +10,13 @@ public class CarApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(CarApplication.class, args);
 		
-		tesla obj = context.getBean(tesla.class);
+		tesla obj1 = context.getBean(tesla.class);
 		
-		obj.show();
+		obj1.show();
 		
+		tesla obj2 = context.getBean(tesla.class);
+		
+		obj2.show();
 	}
 
 }
